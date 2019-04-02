@@ -1,4 +1,4 @@
 package Stalls;
 
-public class IceCreamStall {
+public class IceCreamStall extends Stall {
 }

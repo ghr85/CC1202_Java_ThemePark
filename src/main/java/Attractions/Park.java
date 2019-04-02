@@ -1,4 +1,8 @@
 package Attractions;
 
-public class Park {
+public class Park extends Attraction{
+
+    public Park(String name){
+        super(name);
+    }
 }

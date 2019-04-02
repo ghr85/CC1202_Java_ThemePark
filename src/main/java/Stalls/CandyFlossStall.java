@@ -1,4 +1,4 @@
 package Stalls;
 
-public class CandyFlossStall {
+public class CandyFlossStall extends Stall {
 }

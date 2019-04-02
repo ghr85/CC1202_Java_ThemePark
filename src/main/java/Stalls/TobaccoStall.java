@@ -1,4 +1,4 @@
 package Stalls;
 
-public class TobaccoStall {
+public class TobaccoStall extends Stall {
 }
