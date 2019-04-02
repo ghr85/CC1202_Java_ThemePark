@@ -15,4 +15,15 @@ public class TestCandyFlossStall {
     public void canGetName(){
         assertEquals("Twister", candyFlossStall.getName());
     }
+
+    @Test
+    public void canGetOwnerName(){
+        assertEquals("McGready", candyFlossStall.getOwnerName());
+    }
+
+    @Test
+    public void canGetParkingSpot(){
+        assertEquals("E28", candyFlossStall.getParkingSpot());
+    }
+
 }

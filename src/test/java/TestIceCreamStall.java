@@ -15,4 +15,15 @@ public class TestIceCreamStall {
     public void canGetName(){
         assertEquals("Twister", iceCreamStall.getName());
     }
+
+    @Test
+    public void canGetOwnerName(){
+        assertEquals("McGready", iceCreamStall.getOwnerName());
+    }
+
+    @Test
+    public void canGetParkingSpot(){
+        assertEquals("E28", iceCreamStall.getParkingSpot());
+    }
+
 }
