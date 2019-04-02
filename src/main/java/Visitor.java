@@ -8,4 +8,17 @@ public class Visitor {
         this.age = age;
         this.money = money;
     }
+    public double getHeight() {
+        return height;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public double getMoney() {
+        return money;
+    }
+
+
 }
