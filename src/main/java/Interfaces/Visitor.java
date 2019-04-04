@@ -1,3 +1,5 @@
+package Interfaces;
+
 public class Visitor {
     private double height;
     private int age;

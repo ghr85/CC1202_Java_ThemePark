@@ -17,7 +17,7 @@ Model a ThemePark (with various Attraction and Stalls) and its Visitors.
 
 Remember to model class diagrams first, then write tests, then write code.
 
-1. `Visitor` has age, height, money
+1. `Interfaces.Visitor` has age, height, money
 2. Using an `Attraction` abstract class (which has a `name`), create some subclasses for `Rollercoaster`, `Dodgems`, `Park`, `Playground`
 3. Using a `Stall` abstract class (which has a `name`, `ownerName` and `parkingSpot`), create some classes for `IceCreamStall`, `CandyFlossStall`, `TobaccoStall`
 
@@ -25,9 +25,9 @@ Remember to model class diagrams first, then write tests, then write code.
 
 Introduce some Interfaces to enable charging, restricting and reviewing attractions and stalls:
 
-1. `ITicketed` promises `double defaultPrice()` and `double priceFor(Visitor)`
-2. `ISecurity` promises `boolean isAllowedTo(Visitor)`
-3. `IReviewed` promises `int getRating()` and `String getName()`
+1. `ITicketed` promises `double defaultPrice()` and `double priceFor(Interfaces.Visitor)`:white_check_mark:
+2. `ISecurity` promises `boolean isAllowedTo(Interfaces.Visitor)` :white_check_mark:
+3. `IReviewed` promises `int getRating()` and `String getName()` :white_check_mark:
 
    Have some of the classes implement these interfaces. Below are the rules about what the implementations should be:
 
@@ -46,7 +46,7 @@ Introduce some Interfaces to enable charging, restricting and reviewing attracti
 ### Classes and Abstract Classes
 
 1. `ThemePark` stores all `Attractions` and `Stalls` in it.
-2. `ThemePark` has a method `visit(Visitor, Attraction)`
+2. `ThemePark` has a method `visit(Interfaces.Visitor, Attraction)`
 
 ### Interfaces
 
@@ -59,5 +59,5 @@ Introduce some Interfaces to enable charging, restricting and reviewing attracti
 
 ### Polymorphism
 
-1. `ThemePark` has a method `getAllAllowedFor(Visitor)` which takes a `Visitor` and returns an ArrayList of `IReviewed`
+1. `ThemePark` has a method `getAllAllowedFor(Interfaces.Visitor)` which takes a `Interfaces.Visitor` and returns an ArrayList of `IReviewed`
 2. `ThemePark` has a method that can return a string with all reviews, returning a String a little bit like this: `Rollercoster: 4, Dodgems: 8, Park: 2, IceCream: 6, TobaccoStall: 1`

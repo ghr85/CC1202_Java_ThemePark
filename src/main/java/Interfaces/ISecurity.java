@@ -1,4 +1,5 @@
 package Interfaces;
-//isallowedto - max age, min age, min height
-public class ISecurity {
+
+public interface ISecurity {
+    public boolean isAllowedTo(Visitor visitor);
 }

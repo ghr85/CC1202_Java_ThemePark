@@ -1,4 +1,6 @@
 package Interfaces;
-//IReviewed promises int getRating() and String getName()
-public class IReviewed {
+
+public interface IReviewed {
+    public int getRating();
+    public String getName();
 }
